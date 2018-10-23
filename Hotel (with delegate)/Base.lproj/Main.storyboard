@@ -11,7 +11,7 @@
         <!--Registration List-->
         <scene sceneID="gsS-Tx-CIZ">
             <objects>
-                <tableViewController id="YSB-dd-1zz" customClass="AddRegistrationTableViewController" customModule="Hotel" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="YSB-dd-1zz" customClass="AddRegistrationTableViewController" customModule="Hotel__with_delegate_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="AJT-dh-2Ee">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -411,7 +411,7 @@
         <!--Room Type-->
         <scene sceneID="5pz-Xj-JJ0">
             <objects>
-                <tableViewController id="0ku-bd-yat" customClass="DetailTableViewController" customModule="Hotel" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="0ku-bd-yat" customClass="DetailTableViewController" customModule="Hotel__with_delegate_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="41X-XW-XDD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -478,6 +478,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="doneButton" destination="q2U-zK-gF0" id="k3W-rR-MbN"/>
                         <outlet property="roomPriceLabel" destination="wNF-Bs-Ex4" id="FJG-WL-C5e"/>
                         <outlet property="roomTypeLabel" destination="phA-f9-aEm" id="GaO-7x-rSa"/>
                         <outlet property="roomTypePicker" destination="lbn-yA-3WG" id="sFY-Ma-gX1"/>

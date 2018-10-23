@@ -13,6 +13,7 @@ class DetailTableViewController: UITableViewController, UIPickerViewDataSource, 
     @IBOutlet weak var roomTypePicker: UIPickerView!
     @IBOutlet weak var roomTypeLabel: UILabel!
     @IBOutlet weak var roomPriceLabel: UILabel!
+    @IBOutlet weak var doneButton: UIBarButtonItem!
     
     var roomType: [RoomType] = [
         RoomType(id: 0, name: "Single", shortName: "SNGL", price: 100),
@@ -40,6 +41,8 @@ class DetailTableViewController: UITableViewController, UIPickerViewDataSource, 
             roomTypeLabel.text = roomType.name
             roomPriceLabel.text = "$\(roomType.price) / 1 day"
         }
+        
+        updateDoneButtonState()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -102,6 +105,16 @@ class DetailTableViewController: UITableViewController, UIPickerViewDataSource, 
         
         // Вызывается делегат, т.е. AddRegistrationTableViewController, и его метод didSelect. где сразу при выборе типа комнаты, она отображается в lable'e AddRegistrationTableViewController'а.
         delegate?.didSelect(roomType: selectedRoomType)
+        
+        updateDoneButtonState()
+    }
+    
+    func updateDoneButtonState() {
+        if roomTypeLabel.text == "Type" {
+            doneButton.isEnabled = false
+        } else {
+            doneButton.isEnabled = true
+        }
     }
 }
 
