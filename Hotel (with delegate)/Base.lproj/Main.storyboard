@@ -26,20 +26,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XyF-al-eNI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XyF-al-eNI">
+                                                    <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="XyF-al-eNI" firstAttribute="leading" secondItem="GK1-ie-Iat" secondAttribute="leading" id="5yR-rF-Snl"/>
+                                                <constraint firstItem="XyF-al-eNI" firstAttribute="leading" secondItem="GK1-ie-Iat" secondAttribute="leading" constant="16" id="5yR-rF-Snl"/>
                                                 <constraint firstItem="XyF-al-eNI" firstAttribute="top" secondItem="GK1-ie-Iat" secondAttribute="top" id="HgU-lp-Xek"/>
-                                                <constraint firstAttribute="trailing" secondItem="XyF-al-eNI" secondAttribute="trailing" id="Yew-Mw-HaA"/>
+                                                <constraint firstAttribute="trailing" secondItem="XyF-al-eNI" secondAttribute="trailing" constant="16" id="Yew-Mw-HaA"/>
                                                 <constraint firstAttribute="bottom" secondItem="XyF-al-eNI" secondAttribute="bottom" id="uzP-Lx-lNt"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="x0O-73-gcJ">
                                         <rect key="frame" x="0.0" y="79" width="320" height="44"/>
@@ -48,8 +49,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hEW-AM-uRV">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hEW-AM-uRV">
+                                                    <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -58,8 +59,8 @@
                                             <constraints>
                                                 <constraint firstItem="hEW-AM-uRV" firstAttribute="top" secondItem="gro-m8-gbl" secondAttribute="top" id="2Eb-GV-Pmu"/>
                                                 <constraint firstAttribute="bottom" secondItem="hEW-AM-uRV" secondAttribute="bottom" id="ZIS-bx-u1b"/>
-                                                <constraint firstItem="hEW-AM-uRV" firstAttribute="leading" secondItem="gro-m8-gbl" secondAttribute="leading" id="f80-2x-rOH"/>
-                                                <constraint firstAttribute="trailing" secondItem="hEW-AM-uRV" secondAttribute="trailing" id="ngs-d3-Ef3"/>
+                                                <constraint firstItem="hEW-AM-uRV" firstAttribute="leading" secondItem="gro-m8-gbl" secondAttribute="leading" constant="16" id="f80-2x-rOH"/>
+                                                <constraint firstAttribute="trailing" secondItem="hEW-AM-uRV" secondAttribute="trailing" constant="16" id="ngs-d3-Ef3"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -70,18 +71,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Email adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qsq-1r-Gxj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your Email adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qsq-1r-Gxj">
+                                                    <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Qsq-1r-Gxj" secondAttribute="trailing" id="AJH-q6-6AF"/>
+                                                <constraint firstAttribute="trailing" secondItem="Qsq-1r-Gxj" secondAttribute="trailing" constant="16" id="AJH-q6-6AF"/>
                                                 <constraint firstAttribute="bottom" secondItem="Qsq-1r-Gxj" secondAttribute="bottom" id="s7M-pP-OHm"/>
                                                 <constraint firstItem="Qsq-1r-Gxj" firstAttribute="top" secondItem="zRY-wh-Gfr" secondAttribute="top" id="ssG-R1-k0m"/>
-                                                <constraint firstItem="Qsq-1r-Gxj" firstAttribute="leading" secondItem="zRY-wh-Gfr" secondAttribute="leading" id="tTV-l7-gDH"/>
+                                                <constraint firstItem="Qsq-1r-Gxj" firstAttribute="leading" secondItem="zRY-wh-Gfr" secondAttribute="leading" constant="16" id="tTV-l7-gDH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
