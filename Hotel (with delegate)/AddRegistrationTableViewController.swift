@@ -183,6 +183,8 @@ class AddRegistrationTableViewController: UITableViewController {
             isDepartureDatePickerShown = false
         }
         tableView.endUpdates() // вместо этого блока beginUpdates()-endUpdates() можно tableView.reloadData(), но не имеет смысла, т.к. нет источника данных. Также reloadData() можно использовать, если не нужна анимация.
+        
+        tableView.endEditing(true) 
     }
     
     func updateDate() {
